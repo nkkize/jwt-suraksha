@@ -19,3 +19,9 @@ Content-Type: application/json
     "name": "narender",
     "password": "password" 
 }
+
+###
+
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibmFyZW5kZXIiLCJwYXNzd29yZCI6IiQyYiQxMCRZSlcxeWl3M3JTaDR5dVAwL1FwWU51ZkRPNnRYdVhlMDVEZ0hEc2tqZ2hnYXJzci5XV0E5SyIsImlhdCI6MTYwOTU3NTYwMn0.TUvPn81t9-DcWs80pZ6aT-XnSUGlaLCzEhfCK-e5o-k
+Content-Type: application/json
