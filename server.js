@@ -8,8 +8,6 @@ const app = express();
 
 app.use(express.json());
 
-const users = [];
-
 const posts = [
     {
         name: 'narender',
@@ -20,6 +18,7 @@ const posts = [
         title: 'post2'
     }
 ]
+
 app.get('/posts', authenticateToken, (req, res) => {
     res.json(posts.filter(post => post.name === req.user.name));
 });
@@ -38,7 +37,7 @@ function authenticateToken(req, res, next) {
 
         req.user = user;
         next();
-    })
+    });
 }
 
-app.listen(3000);
+app.listen(3000);  
